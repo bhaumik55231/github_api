@@ -28,6 +28,7 @@ const getAccessToken = async (code) => {
     const response = await fetch(url2, {
         method: 'POST',
         body: data,
+        mode: 'no-cors',
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
